@@ -36,6 +36,6 @@ public class Livro {
     }
 
     public void calculateTotalPrice(){
-        System.out.println("O preço do livro é de R$"+price);
+        System.out.println("O preço do livro é de: R$"+price);
     }
 }

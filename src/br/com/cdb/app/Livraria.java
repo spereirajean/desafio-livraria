@@ -21,7 +21,7 @@ public class Livraria {
 
         LivroFisico fisico02 = new LivroFisico();
         fisico02.setTitle("O Homem Mais Rico da Babilônia");
-        fisico02.setAuthor(" George S Clasoni");
+        fisico02.setAuthor(" George S. Clasoni");
         fisico02.setIdentificationNumber("02");
         fisico02.setWeight(0.950);
         fisico02.setPriceFreight(09.99);

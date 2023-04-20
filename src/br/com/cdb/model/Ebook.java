@@ -12,7 +12,7 @@ public class Ebook extends Livro {
     }
 
     public void sizeEbook(){
-        System.out.println("O tamanho do ebook é de "+mbSize+"MB");
+        System.out.println("O tamanho do ebook é de: "+mbSize+"MB");
     }
 
 }

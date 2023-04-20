@@ -27,6 +27,6 @@ public class LivroFisico extends Livro {
 
     @Override
     public void calculateTotalPrice() {
-        System.out.println("\n Preço total da compra:" + getPriceFreight() + getPrice());
+        System.out.println("\n O preço total da compraé de R$:" + getPriceFreight() + getPrice());
     }
 }
