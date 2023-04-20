@@ -4,34 +4,40 @@ import br.com.cdb.model.Ebook;
 import br.com.cdb.model.Livro;
 import br.com.cdb.model.LivroFisico;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Livraria {
     public static void main(String[] args) {
+        ArrayList<Livro> Cátalogo = new ArrayList();
 
-        Livro livro = new Livro();
-        LivroFisico livroFis = new LivroFisico();
+        LivroFisico fisico = new LivroFisico();
+        fisico.setTitle("Pai Rico, Pai Pobre");
+        fisico.setAuthor("Robert T. Kiyosaki");
+        fisico.setIdentificationNumber("01");
+        fisico.setWeight(0.950);
+        fisico.setPriceFreight(14.99);
+        fisico.setPrice(45.99);
+
+        LivroFisico fisico02 = new LivroFisico();
+        fisico02.setTitle("O Homem Mais Rico da Babilônia");
+        fisico02.setAuthor(" George S Clasoni");
+        fisico02.setIdentificationNumber("02");
+        fisico02.setWeight(0.950);
+        fisico02.setPriceFreight(09.99);
+        fisico02.setPrice(17.90);
+
         Ebook ebook = new Ebook();
-        Scanner input = new Scanner(System.in);
+        ebook.setTitle("Do Mil ao Milhão. Sem Cortar o Cafezinho.");
+        ebook.setAuthor("Thiago Nigro");
+        ebook.setPrice(22.90);
+        ebook.setMbSize(24.5);
 
-        int numMenu = 0;
-            System.out.println("===== Menu inicial =====" +
-                    "\n 1 - Valor do livro Físico" +
-                    "\n 2 - Tamanho do ebook" +
-                    "\n 3 - Valor do frete livro físico" +
-                    "\n 4 - Valor do livro com frete" +
-                    "\n 5 - Sair");
-        numMenu = input.nextInt();
-
-        switch (numMenu){
-            case 1:
-                livro.calculateTotalPrice();
-            case 2:
-                ebook.sizeEbook();
-            case 3:
-                livroFis.getPrice();
-            case 4:
-                livroFis.priceWithFreight();
+        Ebook ebook02 = new Ebook();
+        ebook02.setTitle("Mais esperto que o Diabo: O mistério revelado da liberdade e do sucesso");
+        ebook02.setAuthor("Napoleon Hill");
+        ebook02.setPrice(29.90);
+        ebook02.setMbSize(30.5);
         }
     }
-}
+

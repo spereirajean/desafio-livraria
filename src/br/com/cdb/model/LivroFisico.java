@@ -25,8 +25,8 @@ public class LivroFisico extends Livro {
         System.out.println(priceFreight);
     }
 
-    public void priceWithFreight() {
-        double priceWithFreight = getPrice() + getPriceFreight();
-        System.out.println("O valor do livro com frete é de R$" + priceWithFreight);
+    @Override
+    public void calculateTotalPrice() {
+        System.out.println("\n Preço total da compra:" + getPriceFreight() + getPrice());
     }
 }

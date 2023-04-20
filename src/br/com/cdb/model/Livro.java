@@ -20,12 +20,14 @@ public class Livro {
     public void setAuthor(String author){
         this.author = author;
     }
+
     public String getIdentificationNumber(){
         return identificationNumber;
     }
     public void setIdentificationNumber(String identificationNumber){
         this.identificationNumber = identificationNumber;
     }
+
     public double getPrice(){
         return price;
     }
