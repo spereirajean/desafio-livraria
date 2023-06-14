@@ -5,7 +5,7 @@ public class Livro {
     private String title;
     private String author;
     private String identificationNumber;
-    private double price=30;
+    private double price=3;
 
     public String getTitle(){
         return title;
