@@ -21,7 +21,11 @@ public class Livro {
     private double preco;
 
     public String getTitulo(){
-        return autor;
+        return titulo;
+    }
+    public void String (String titulo){
+        this.titulo = titulo;
     }
 
+    public
 }
