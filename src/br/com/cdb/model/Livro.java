@@ -20,15 +20,24 @@ public class Livro {
     private int anoDePublicacao;
     private double preco;
 
-    public String getTitulo(){
+    public String getTitulo() {
         return titulo;
     }
-    public void String set(String titulo){
+
+    public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
-    public String getAutor(){
+    public void String(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
         return autor;
     }
-    public void String
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
 }
