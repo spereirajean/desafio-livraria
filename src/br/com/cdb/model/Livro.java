@@ -28,10 +28,6 @@ public class Livro {
         this.titulo = titulo;
     }
 
-    public void String(String titulo) {
-        this.titulo = titulo;
-    }
-
     public String getAutor() {
         return autor;
     }
@@ -40,4 +36,19 @@ public class Livro {
         this.autor = autor;
     }
 
+    public int getAnoDePublicacao() {
+        return anoDePublicacao;
+    }
+
+    public void setAnoDePublicacao(int anoDePublicacao) {
+        this.anoDePublicacao = anoDePublicacao;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
 }
